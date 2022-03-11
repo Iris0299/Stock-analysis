@@ -1,0 +1,39 @@
+.stock {
+  list-style: none;
+}
+.AddExpect {
+  float: left;
+  width: 50%;
+  margin-bottom: 40px
+}
+.stockExpect {
+  width: 50%;
+}
+.password {
+  margin-left: 9px;
+}
+.login {
+  margin-top: 20px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+}
+.userName {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.getInfor {
+  margin-top: 20px;
+  margin-left: 120px;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 30px;
+}
+.signup {
+  margin-left: 140px;
+  margin-bottom: 20px;
+}
+.addStock {
+  margin-left: 10px;
+}

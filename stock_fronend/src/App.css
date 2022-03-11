@@ -1,0 +1,13 @@
+.theme {
+  
+  color:#fff;
+  size: 20px;
+  background-color: rgb(181, 190, 240);
+  width: 100px;
+  margin: 20px;
+  font-size: 20px;
+}
+
+.none {
+  text-decoration: none;
+}

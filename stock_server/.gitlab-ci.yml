@@ -1,0 +1,35 @@
+image: node:latest
+
+stages:
+  - build
+  - test
+  - deploy
+
+before_script:
+  - yarn global add node-gyp
+  - yarn --version
+
+build:
+  stage: build
+  script:
+    - echo "This job builds something..."
+
+code-quality:
+  stage: test
+  script:
+    - yarn install
+    - yarn lint
+
+unit-test:
+  services:
+    - name: mongo:latest
+  stage: test
+  before_script: []
+  script:
+    - yarn install
+    - NODE_ENV=test PORT=3000 MONGODB_URI=mongodb://mongo:27017 MONGODB_URI_TEST=mongodb://mongo:27017 JWT_KEY=test yarn test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "This job deploy something..."

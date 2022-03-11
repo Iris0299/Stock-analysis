@@ -1,0 +1,32 @@
+{
+  "name": "datastock",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "lint": "eslint index.js",
+    "lint-fix": "eslint index.js --fix"
+  },
+  "dependencies": {
+    "cron": "^1.8.2",
+    "dotenv-safe": "^8.2.0",
+    "eslint": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0",
+    "request": "^2.88.2",
+    "standard": "^16.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
